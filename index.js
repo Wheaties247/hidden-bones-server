@@ -26,7 +26,7 @@ app.post('/logic/:rows/:columns',
 	}
 	console.log("request complete", responceObj)
 
-	res.json(responceObj)
+	res.send(responceObj, "sent")
 })
 
 
