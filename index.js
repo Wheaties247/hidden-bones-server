@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 const bonelogic = require("./boneLogic/boneLogic.js");
 
-app.post('/logic/:rows/:columns',
+app.get('/logic/:rows/:columns',
 		 bonelogic.tileLogic,
 		 bonelogic.createBones, 
 		 bonelogic.placeBones,
