@@ -6,7 +6,8 @@ const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 7770;
 
 // const bonelogic = require("./bonelogic/boneLogic.js")
-
+const cors = require('cors');
+app.use(cors());
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
